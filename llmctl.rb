@@ -4,7 +4,7 @@ class Llmctl < Formula
   desc "A CLI tool for testing and validating LLM services"
   homepage "https://github.com/zhangzhenhu/llmctl"
   license "MIT"
-  version "0.1.1"
+  version "0.1.3"
 
   if OS.mac?
     if Hardware::CPU.arm?
