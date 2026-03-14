@@ -20,14 +20,8 @@ class Llmctl < Formula
     end
   end
 
-  depends_on "rust" => :build
-
   def install
-    if File.exist?("llmctl")
-      bin.install "llmctl" => "llmctl"
-    else
-      system "cargo", "install", "--root", prefix, "--path", "."
-    end
+    bin.install "llmctl"
   end
 
   test do
